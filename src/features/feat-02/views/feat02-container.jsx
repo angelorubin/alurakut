@@ -1,5 +1,5 @@
 import React from "react";
-import * as S from "./feat02Styles";
+import * as S from "./feat02-styles";
 import { useSelector } from "react-redux";
 
 const Feat01 = () => {

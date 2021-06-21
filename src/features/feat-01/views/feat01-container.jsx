@@ -1,5 +1,5 @@
 import React from "react";
-import * as S from "./feat01Styles";
+import * as S from "./feat01-styles";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
@@ -9,7 +9,6 @@ const Feat01 = () => {
 
   const handleClick = (e) => {
     e.preventDefault();
-
     return dispatch({
       type: "feat01/addTitle",
       payload: "React Redux Boilerplate",
