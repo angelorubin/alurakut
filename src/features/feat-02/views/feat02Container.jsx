@@ -1,5 +1,5 @@
 import React from "react";
-import * as S from "./feat01Styles";
+import * as S from "./feat02Styles";
 import { useSelector, useDispatch } from "react-redux";
 
 const Feat01 = () => {
@@ -8,7 +8,7 @@ const Feat01 = () => {
 
   const handleClick = () => {
     return dispatch({
-      type: "feat01/addTitle",
+      type: "feat02/addTitle",
       payload: "React Redux",
     });
   };

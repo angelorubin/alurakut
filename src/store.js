@@ -1,16 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
+import feat01Reducer from "features/feat-01/store/reducer";
+import feat02Reducer from "features/feat-02/store/reducer";
 
-const initialState = [{ id: 1, username: "angelo" }];
-
-const usersReducer = (state = initialState, action) => {
-  switch (action.type) {
-    case "TYPE_1":
-      return { ...state, data: action.payload.data };
-    default:
-      return state;
-  }
+const reducer = {
+  feat01: feat01Reducer,
+  feat02: feat02Reducer,
 };
 
 export default configureStore({
-  reducer: { users: usersReducer },
+  reducer,
 });

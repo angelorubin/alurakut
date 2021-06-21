@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { App } from "./app";
 import { GlobalStyle } from "./global-style.js";
-import { App } from "./App";
 import { Provider } from "react-redux";
 
 // Redux Store
