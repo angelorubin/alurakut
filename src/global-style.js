@@ -23,7 +23,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   :root{
-    // Colors
-    --primary-color: pink;
+    // Base Colors
+    --primary-color: #0C2D48;
+    --secondary-color: #B1D4E0;
   }
 `;
