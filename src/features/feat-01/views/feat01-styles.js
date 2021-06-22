@@ -8,6 +8,7 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h1`
-  color: var(--primary-color);
+  color: ${({ color }) => (color ? color : "")};
   font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 `;
