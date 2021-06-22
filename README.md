@@ -2,7 +2,7 @@
 
 ## Descrição do projeto
 
-O React Redux Boilerplate é um estrutura inicial baseada no [create-react-app](), [React](https://pt-br.reactjs.org) e [Redux](https://pt-br.reactjs.org), [React-Redux]() e [Redux ToolKit](), que habilita você a começar um projeto React com rápidez e com o necessário incluído e configurado.
+O React Redux Boilerplate é um estrutura inicial baseada no [create-react-app](), [React](https://pt-br.reactjs.org), [Redux](https://pt-br.reactjs.org), [React-Redux]() e [Redux ToolKit](), que habilita você a iniciar um projeto React com agilidade e com o básico necessário já incluído e configurado.
 
 ## Pacotes utilizados no projeto
 
@@ -16,7 +16,7 @@ O React Redux Boilerplate é um estrutura inicial baseada no [create-react-app](
 
 No diretório do projeto execute o seguinte comando no console:
 
-### `yarn start`
+#### `yarn start`
 
 Este comando acima executa o aplicativo no modo de desenvolvimento (localmente).
 
