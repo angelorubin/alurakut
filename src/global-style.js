@@ -11,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
 
   html {
     // 1rem === 10px
-    font-size: 62.5%;
+    // font-size: 62.5%;
   }
 
   html, body {
