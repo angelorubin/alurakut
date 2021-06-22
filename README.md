@@ -1,4 +1,28 @@
-# Getting Started with Create React App
+# React Redux Boilerplate
+
+## Descrição do projeto
+
+O React Redux Boilerplate é um estrutura inicial baseada no [create-react-app](), [React](https://pt-br.reactjs.org) e [Redux](https://pt-br.reactjs.org), [React-Redux]() e [Redux ToolKit](), que habilita você a começar um projeto React com rápidez e com o necessário incluído e configurado.
+
+## Pacotes utilizados no projeto
+
+- create-react-app
+- react-router-dom
+- redux
+- react-redux
+- redux toolkit
+
+## Como executar o projeto
+
+No diretório do projeto execute o seguinte comando no console:
+
+### `yarn start`
+
+Este comando acima executa o aplicativo no modo de desenvolvimento (localmente).
+
+Abra [http://localhost:3000](http://localhost:3000) para visualizá-lo no seu navegador.
+
+## Começando com o Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
