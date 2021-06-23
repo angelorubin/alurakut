@@ -1,6 +1,6 @@
 import React from "react";
 import * as S from "./styles";
 
-export const Button = ({ children }) => {
-  return <S.BaseButton>{children}</S.BaseButton>;
+export const Button = (props) => {
+  return <S.BaseButton {...props}>{props.children}</S.BaseButton>;
 };
