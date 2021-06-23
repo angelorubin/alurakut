@@ -3,13 +3,14 @@ import * as S from "./feat01-styles";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { useTheme } from "@material-ui/core/styles";
+import * as C from "shared/components/button";
 
 const Feat01 = () => {
   const { title } = useSelector((state) => state.feat01);
   const dispatch = useDispatch();
   const theme = useTheme();
   const { palette } = theme;
-  const { primary } = palette;
+  const { primary, secondary } = palette;
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -33,9 +34,14 @@ const Feat01 = () => {
         ducimus excepturi beatae architecto tempora quod consequatur, modi
         voluptates voluptatum porro.
       </p>
-      <button type="button" onClick={handleClick}>
+      <C.Button
+        variant="contained"
+        color={secondary.main}
+        type="button"
+        onClick={handleClick}
+      >
         modificar titulo
-      </button>
+      </C.Button>
     </S.Container>
   );
 };

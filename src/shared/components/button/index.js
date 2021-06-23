@@ -1,5 +1,6 @@
 import React from "react";
+import * as S from "./styles";
 
-export const BaseButton = ({ children }) => {
-  return <button>{children}</button>;
+export const Button = ({ children }) => {
+  return <S.BaseButton>{children}</S.BaseButton>;
 };
