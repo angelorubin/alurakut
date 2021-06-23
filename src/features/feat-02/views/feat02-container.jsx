@@ -24,7 +24,7 @@ const Feat02 = () => {
         pariatur, consectetur accusamus adipisci, nemo voluptate voluptatum.
         Distinctio hic inventore quibusdam!
       </p>
-      <button onClick={handleClick}>mudar título</button>;
+      <button onClick={handleClick}>mudar título</button>
     </S.Container>
   );
 };
