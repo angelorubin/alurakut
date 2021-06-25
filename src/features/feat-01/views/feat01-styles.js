@@ -2,8 +2,12 @@ import styled, { css } from "styled-components";
 import {
   Container as MuiContainer,
   Typography as MuiTypography,
-  Button as MuiButton,
+  Button,
 } from "@material-ui/core";
+import { createMuiTheme } from "@material-ui/core/styles";
+const theme = createMuiTheme();
+
+const { error, grey } = theme.palette;
 
 export const Container = styled(MuiContainer).attrs(
   ({ maxWidth, alignItems }) => ({
@@ -21,6 +25,13 @@ export const Title = styled(MuiTypography).attrs(() => ({}))`
   font-size: 1.5rem;
 `;
 
-export const Button = styled(MuiButton).attrs(({}) => ({}))``;
-
 export const Typography = styled(MuiTypography)``;
+
+export const WarningButton = styled(Button)`
+  color: ${error.contrastText};
+  background-color: ${error.main};
+  &&:hover {
+    color: ${grey[900]};
+    background-color: ${error.light};
+  }
+`;

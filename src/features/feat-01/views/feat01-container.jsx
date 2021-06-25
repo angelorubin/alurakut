@@ -49,11 +49,9 @@ const Feat01 = () => {
             modificar titulo
           </Button>
         </Box>
-        <Box display="flex" justifyContent="flex-end">
-          <Box display="flex">
-            <Button variant="contained" color="warning.main">
-              Warning Button
-            </Button>
+        <Box display="flex">
+          <Box>
+            <S.WarningButton>Warning Button</S.WarningButton>
           </Box>
         </Box>
       </Box>
