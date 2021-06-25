@@ -25,25 +25,25 @@ const Feat01 = () => {
         </nav>
         <S.Typography variant="h3">{title}</S.Typography>
         <Typography variant="h4">Feat 01</Typography>
-        <p>
+        <Typography variant="body1">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
           repellat dolor eos repellendus cumque necessitatibus quas suscipit
           magni eveniet ducimus excepturi beatae architecto tempora quod
           consequatur, modi voluptates voluptatum porro.
-        </p>
+        </Typography>
       </Box>
       <Box
+        m={1}
         p="1rem"
         display="flex"
         border={1}
-        m={1}
         borderColor="secondary.main"
       >
         <Box m={0} mr={1}>
           <Button
             fullWidth
             variant="outlined"
-            size="small"
+            size="large"
             onClick={handleClick}
           >
             modificar titulo
@@ -51,8 +51,8 @@ const Feat01 = () => {
         </Box>
         <Box display="flex" justifyContent="flex-end">
           <Box display="flex">
-            <Button fullWidth variant="outlined" color="primary" size="small">
-              modificar titulo
+            <Button variant="contained" color="warning.main">
+              Warning Button
             </Button>
           </Box>
         </Box>

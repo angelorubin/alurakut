@@ -4,8 +4,6 @@ import {
   Typography as MuiTypography,
   Button as MuiButton,
 } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core";
-const useStyles = makeStyles({});
 
 export const Container = styled(MuiContainer).attrs(
   ({ maxWidth, alignItems }) => ({
@@ -25,6 +23,4 @@ export const Title = styled(MuiTypography).attrs(() => ({}))`
 
 export const Button = styled(MuiButton).attrs(({}) => ({}))``;
 
-export const Typography = styled(MuiTypography)`
-  color: ;
-`;
+export const Typography = styled(MuiTypography)``;

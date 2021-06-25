@@ -19,6 +19,7 @@ let theme = createMuiTheme({
     },
   },
   palette: {
+    type: "light",
     common: {
       black: "#000",
       white: "#fff",
@@ -36,7 +37,10 @@ let theme = createMuiTheme({
       contrastText: "#000",
     },
     warning: {
-      main: red[500],
+      light: red[300],
+      main: red[600],
+      dark: red[900],
+      contrastText: "#fff",
     },
   },
   typography: {
