@@ -14,7 +14,6 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <ThemeProvider theme={theme}>
-        <GlobalStyle />
         <CssBaseline />
         <Helmet>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
