@@ -5,7 +5,4 @@ export const Container = styled.div`
   flex-direction: column;
 `;
 
-export const Title = styled.h1`
-  color: var(--primary-color);
-  font-size: var(--smallSize);
-`;
+export const Title = styled.h1``;

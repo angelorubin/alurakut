@@ -2,23 +2,29 @@ import styled, { css } from "styled-components";
 import {
   Container as MuiContainer,
   Typography as MuiTypography,
+  Button as MuiButton,
 } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core";
+const useStyles = makeStyles({});
 
-export const Container = styled(MuiContainer).attrs(({ maxWidth }) => ({
-  maxWidth: maxWidth ? maxWidth : "xs",
-}))`
+export const Container = styled(MuiContainer).attrs(
+  ({ maxWidth, alignItems }) => ({
+    maxWidth: maxWidth ? maxWidth : "xl",
+    alignItems: alignItems ? alignItems : "",
+  })
+)`
   ${() => css`
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  `}
+    flex-direction: ${({ flexDirection }) =>
+      flexDirection ? flexDirection : "row"};
+  `},
 `;
 
-export const Title = styled(MuiTypography).attrs(({ color }) => ({
-  color: color ? color.toString() : "#000",
-}))`
-  color: ${({ color }) => (color ? color : "error")};
-  font-size: 2rem;
+export const Title = styled(MuiTypography).attrs(() => ({}))`
+  font-size: 1.5rem;
+`;
+
+export const Button = styled(MuiButton).attrs(({}) => ({}))``;
+
+export const Typography = styled(MuiTypography)`
+  color: ;
 `;

@@ -1,6 +1,7 @@
 import React from "react";
 import * as S from "./feat02-styles";
 import { useSelector, useDispatch } from "react-redux";
+import { Button } from "@material-ui/core";
 
 const Feat02 = () => {
   const { title } = useSelector((state) => state.feat02);
@@ -24,7 +25,9 @@ const Feat02 = () => {
         pariatur, consectetur accusamus adipisci, nemo voluptate voluptatum.
         Distinctio hic inventore quibusdam!
       </p>
-      <button onClick={handleClick}>mudar título</button>
+      <Button color="secondary" onClick={handleClick}>
+        mudar título
+      </Button>
     </S.Container>
   );
 };
