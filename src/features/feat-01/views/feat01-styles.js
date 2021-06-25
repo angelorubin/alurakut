@@ -1,15 +1,12 @@
 import styled, { css } from "styled-components";
-import {
-  Container as MuiContainer,
-  Typography as MuiTypography,
-  Button,
-} from "@material-ui/core";
+import { Container, Typography, Button, Box } from "@material-ui/core";
 import { createMuiTheme } from "@material-ui/core/styles";
 const theme = createMuiTheme();
 
-const { error, grey } = theme.palette;
+const { error, grey, common, text } = theme.palette;
+const { typography } = theme;
 
-export const Container = styled(MuiContainer).attrs(
+export const MyContainer = styled(Container).attrs(
   ({ maxWidth, alignItems }) => ({
     maxWidth: maxWidth ? maxWidth : "xl",
     alignItems: alignItems ? alignItems : "",
@@ -21,17 +18,20 @@ export const Container = styled(MuiContainer).attrs(
   `},
 `;
 
-export const Title = styled(MuiTypography).attrs(() => ({}))`
-  font-size: 1.5rem;
+export const Title = styled(Typography)`
+  color: ${({ color }) => (color ? color : common.white)};
 `;
 
-export const Typography = styled(MuiTypography)``;
-
 export const WarningButton = styled(Button)`
-  color: ${error.contrastText};
+  color: ${text.primary};
   background-color: ${error.main};
   &&:hover {
-    color: ${grey[900]};
     background-color: ${error.light};
+  }
+`;
+
+export const TestBox = styled(Box)`
+  @media (max-width: ${theme.breakpoints.values.md}) {
+    background-color: red;
   }
 `;

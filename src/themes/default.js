@@ -1,21 +1,13 @@
-import { createMuiTheme, responsiveFontSizes } from "@material-ui/core/styles";
+import { createTheme, responsiveFontSizes } from "@material-ui/core/styles";
 import { grey, red, blue, green } from "@material-ui/core/colors";
 
-let theme = createMuiTheme({
+let theme = createTheme({
   breakpoints: {
-    keys: {
-      0: "xs",
-      1: "sm",
-      2: "md",
-      3: "lg",
-      4: "xl",
-    },
     values: {
-      xs: 0,
-      sm: 600,
-      md: 960,
-      lg: 1280,
-      xl: 1920,
+      mobile: 0,
+      tablet: 640,
+      laptop: 1024,
+      desktop: 1200,
     },
   },
   palette: {
@@ -25,9 +17,9 @@ let theme = createMuiTheme({
       white: "#fff",
     },
     primary: {
-      light: blue[300],
-      main: blue[600],
-      dark: blue[900],
+      light: "#58a5f0",
+      main: "#0277bd",
+      dark: "#004c8c",
       contrastText: "#fff",
     },
     secondary: {
@@ -62,6 +54,12 @@ let theme = createMuiTheme({
       augmentColor: "",
       tonalOffset: 0.2,
     },
+    text: {
+      primary: "rgba(0, 0, 0, 0.87)",
+      secondary: "rgba(0, 0, 0, 0.54)",
+      disabled: "rgba(0, 0, 0, 0.38)",
+      hint: "rgba(0, 0, 0, 0.38)",
+    },
   },
   typography: {
     h1: {
@@ -70,6 +68,13 @@ let theme = createMuiTheme({
       fontSize: "6rem",
       lineHeight: 1.167,
       letterSpacing: "-0.01562em",
+    },
+    h3: {
+      fontFamily: "Roboto, Helvetica, Arial, sans-serif",
+      fontWeight: 400,
+      fontSize: "3rem",
+      lineHeight: 1.167,
+      letterSpacing: "0em",
     },
     button: {
       fontFamily: "Roboto, sans-serif",
