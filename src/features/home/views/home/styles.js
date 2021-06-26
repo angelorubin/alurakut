@@ -1,11 +1,11 @@
 import styled, { css } from "styled-components";
-import { Container, Typography, Button, Box } from "@material-ui/core";
-import { createMuiTheme } from "@material-ui/core/styles";
-const theme = createMuiTheme();
-
+import { Box } from "@material-ui/core";
+import { createTheme } from "@material-ui/core";
+const theme = createTheme();
 const { error, grey, common, text } = theme.palette;
 const { typography } = theme;
 
+/**
 export const MyContainer = styled(Container).attrs(
   ({ maxWidth, alignItems }) => ({
     maxWidth: maxWidth ? maxWidth : "xl",
@@ -35,3 +35,4 @@ export const TestBox = styled(Box)`
     background-color: red;
   }
 `;
+*/

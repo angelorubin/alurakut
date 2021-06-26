@@ -17,9 +17,9 @@ let theme = createTheme({
       white: "#fff",
     },
     primary: {
-      light: "#58a5f0",
-      main: "#0277bd",
-      dark: "#004c8c",
+      light: "#8B9E6E",
+      main: "#758963",
+      dark: "#313416",
       contrastText: "#fff",
     },
     secondary: {
@@ -76,6 +76,13 @@ let theme = createTheme({
       lineHeight: 1.167,
       letterSpacing: "0em",
     },
+    body1: {},
+    body2: {
+      fontSize: "0.875rem",
+      fontWeight: 400,
+      letterSpacing: "0.01071em",
+      lineHeight: 1.43,
+    },
     button: {
       fontFamily: "Roboto, sans-serif",
       fontWeight: 500,
@@ -84,6 +91,12 @@ let theme = createTheme({
       letterSpacing: "0.02857em",
       textTransform: "uppercase",
     },
+    fontFamily: "Roboto, Helvetica, Arial, sans-serif",
+    fontSize: 14,
+    fontWeightBold: 700,
+    fontWeightLight: 300,
+    fontWeightMedium: 500,
+    fontWeightRegular: 400,
   },
 });
 
