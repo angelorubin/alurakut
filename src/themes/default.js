@@ -1,5 +1,5 @@
 import { createTheme, responsiveFontSizes } from "@material-ui/core/styles";
-import { grey, red, blue, green } from "@material-ui/core/colors";
+import { grey, red, blue, green, common } from "@material-ui/core/colors";
 
 let theme = createTheme({
   breakpoints: {
@@ -17,16 +17,16 @@ let theme = createTheme({
       white: "#fff",
     },
     primary: {
-      light: "#8B9E6E",
-      main: "#758963",
-      dark: "#313416",
-      contrastText: "#fff",
+      light: blue[300],
+      main: blue[400],
+      dark: blue[600],
+      contrastText: common.white,
     },
     secondary: {
       light: green[300],
       main: green[600],
       dark: green[900],
-      contrastText: "#000",
+      contrastText: common.black,
     },
     error: {
       light: red[300],
