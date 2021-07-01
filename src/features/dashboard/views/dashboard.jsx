@@ -5,6 +5,7 @@ import * as S from "./styles";
 import { alpha } from "@material-ui/core/styles";
 import { Header } from "shared/components/header/header";
 import { Sidebar } from "shared/components/sidebar/sidebar";
+import { Outlet } from "react-router-dom";
 
 const Dashboard = () => {
   const { title } = useSelector((state) => state.dashboard);
@@ -46,7 +47,7 @@ const Dashboard = () => {
             backgroundColor: (theme) => theme.palette.grey[200],
           }}
         >
-          Content
+          <Outlet />
         </Box>
       </Box>
       <Box>
