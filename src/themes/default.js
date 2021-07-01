@@ -1,6 +1,12 @@
 import { createTheme, responsiveFontSizes } from "@material-ui/core/styles";
 import { grey, red, blue, green, common } from "@material-ui/core/colors";
 
+const fontSize = 14; // px
+// Tell Material-UI what's the font-size on the html element.
+// 16px is the default font-size used by browsers.
+const htmlFontSize = 16;
+const coef = fontSize / 14;
+
 let theme = createTheme({
   breakpoints: {
     values: {
@@ -63,6 +69,7 @@ let theme = createTheme({
     },
   },
   typography: {
+    pxToRem: (size) => `${(size / htmlFontSize) * coef}rem`,
     h1: {
       fontFamily: "Roboto, Helvetica, Arial, sans-serif",
       fontWeight: 300,
