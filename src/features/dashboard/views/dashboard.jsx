@@ -3,8 +3,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { Box, Button } from "@material-ui/core";
 import * as S from "./styles";
 import { alpha } from "@material-ui/core/styles";
-import { Header } from "shared/components/header";
-import { Sidebar } from "shared/components/sidebar";
+import { Header } from "shared/components/header/header";
+import { Sidebar } from "shared/components/sidebar/sidebar";
 
 const Dashboard = () => {
   const { title } = useSelector((state) => state.dashboard);
@@ -35,7 +35,6 @@ const Dashboard = () => {
           sx={{
             flex: 1,
             border: "1px dashed white",
-            backgroundColor: (theme) => theme.palette.common.black,
           }}
         >
           <Sidebar />
