@@ -27,14 +27,14 @@ export const Header = () => {
           alignItems: "center",
         }}
       >
-        <S.Link to="/">
+        <S.Link to="/dashboard/messages">
           <Typography
             variant="body2"
             sx={{
               color: "common.white",
             }}
           >
-            Link 01
+            Messages
           </Typography>
         </S.Link>
         <S.Link to="/">
