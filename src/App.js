@@ -2,6 +2,7 @@ import { useRoutes } from "react-router-dom";
 import Dashboard from "./features/dashboard";
 import SignIn from "./features/signin";
 import SignUp from "./features/signup";
+import Messages from "./features/messages";
 
 export const App = () => {
   let routes = useRoutes([
@@ -19,7 +20,7 @@ export const App = () => {
       children: [
         {
           path: "messages",
-          element: <h1>Messages</h1>,
+          element: <Messages />,
         },
       ],
     },
