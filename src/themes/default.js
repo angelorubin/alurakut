@@ -24,9 +24,9 @@ let theme = createTheme({
       white: "#fff",
     },
     primary: {
-      light: blue[300],
+      light: blue[100],
       main: blue[400],
-      dark: blue[600],
+      dark: blue[700],
       contrastText: common.white,
     },
     secondary: {
