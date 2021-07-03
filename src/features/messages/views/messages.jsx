@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Box, Paper, useScrollTrigger } from "@material-ui/core";
-import { useSelector, useDispatch } from "react-redux";
+import { Box, Paper } from "@material-ui/core";
+import { useSelector } from "react-redux";
 
 const Messages = () => {
   const [messages, setMessages] = useState([]);
@@ -14,15 +14,16 @@ const Messages = () => {
 
   return (
     <Box sx={{ display: "flex" }}>
-      {messages.map((user) => (
+      {messages.map((message) => (
         <Box
+          key={message.id}
           sx={{
             display: "flex",
             flexDirection: "column",
           }}
         >
-          <span>{user.id}</span>
-          <span>{user.message}</span>
+          <span>{message.id}</span>
+          <span>{message.message}</span>
         </Box>
       ))}
     </Box>
