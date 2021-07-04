@@ -8,6 +8,9 @@ const htmlFontSize = 16;
 const coef = fontSize / 14;
 
 let theme = createTheme({
+  shape: {
+    borderRadius: 4,
+  },
   breakpoints: {
     values: {
       mobile: 0,

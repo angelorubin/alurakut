@@ -3,8 +3,10 @@ import { Helmet } from "react-helmet";
 import { ThemeProvider } from "@material-ui/core/styles";
 import ReactDOM from "react-dom";
 import { App } from "./app";
-// import { GlobalStyle } from "./global-style.js";
 import { Provider } from "react-redux";
+
+// Global Style
+// import { GlobalStyle } from "./global-style";
 
 // Redux Store
 import store from "./store";
