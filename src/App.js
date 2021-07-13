@@ -19,7 +19,7 @@ export const App = () => {
 			element: <Dashboard />,
 			children: [
 				{
-					path: "user",
+					path: "/user",
 					element: <User />,
 				},
 			],
