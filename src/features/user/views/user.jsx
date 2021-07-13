@@ -1,24 +1,25 @@
 import React, { useState, useEffect } from "react";
 import { Box, Paper } from "@material-ui/core";
 import { useSelector, useDispatch } from "react-redux";
-import userReducer from "features/user/store/slice";
+import { fetchUserById, getMessages } from "features/user/store/slice";
 
 const User = () => {
-	const [messages, setMessages] = useState([]);
-	const userMessages = useSelector((state) => state.messages);
-	const user = useSelector((state) => state.user);
+	// const [messages, setMessages] = useState([]);
+	const messages = useSelector((state) => state.messages);
 	const dispatch = useDispatch();
 
 	useEffect(() => {
-		setMessages(userMessages);
-		dispatch(userReducer.fetchUserById(1).then((data) => console.log(data)));
-	}, []);
+		dispatch(fetchUserById(2)).then((res) => {
+			console.log(res.payload.data);
+		});
 
-	console.log(messages);
+		const userMessages = dispatch(getMessages());
+		console.log(userMessages);
+	}, []);
 
 	return (
 		<Box sx={{ display: "flex" }}>
-			{messages.map((data) => (
+			{[].map((data) => (
 				<Box
 					key={data.id}
 					sx={{
