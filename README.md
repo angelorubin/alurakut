@@ -1,16 +1,20 @@
-# React Redux Boilerplate
+# Alurakut
 
 ## Descrição do projeto
 
-O React Redux Boilerplate é um estrutura inicial baseada no [create-react-app](), [React](https://pt-br.reactjs.org), [Redux](https://pt-br.reactjs.org), [React-Redux]() e [Redux ToolKit](), que habilita você a iniciar um projeto React com agilidade e com o básico necessário já incluído e configurado.
+O Alurakut é um projeto/desafio de imersão React oferecido gratuitamente da plataforma Alura.
+O desafio consisti em desenvolver uma aplicação moderna baseada no antigo site de relacionamentos denominado Orkut.
+O layout base para este projeto encontra-se [aqui](https://www.figma.com/file/xHF0n0qxiE2rqjqAILiBUB/Alurakut).
 
-## Pacotes utilizados no projeto
+## Bibliotecas utilizadas no projeto
 
 - create-react-app
 - react-router-dom
+- react
 - redux
 - react-redux
 - redux toolkit
+- material-ui
 
 ## Como executar o projeto
 
@@ -20,7 +24,7 @@ No diretório do projeto execute o seguinte comando no console:
 
 Este comando acima executa o aplicativo no modo de desenvolvimento (localmente).
 
-Abra [http://localhost:3000](http://localhost:3000) para visualizá-lo no seu navegador.
+Abra [http://localhost:3000](http://localhost:3000) para visualizá-lo em seu navegador.
 
 ## Começando com o Create React App
 
