@@ -2,14 +2,14 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = { title: "Logo" };
 
-export const dashboard = createSlice({
-  name: "dashboard",
-  initialState,
-  reducers: {
-    addTitle: (state, action) => void (state.title = action.payload),
-  },
+export const dashboardSlice = createSlice({
+	name: "dashboard",
+	initialState,
+	reducers: {
+		addTitle: (state, action) => void (state.title = action.payload),
+	},
 });
 
-export const { addTitle } = dashboard.actions;
+export const { addTitle } = dashboardSlice.actions;
 
-export default dashboard.reducer;
+export default dashboardSlice.reducer;
