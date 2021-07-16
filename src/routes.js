@@ -4,9 +4,14 @@ import SignIn from "./features/signin";
 import SignUp from "./features/signup";
 import User from "./features/user";
 import Home from "./features/home";
+import PageNotFound from "shared/components/page-not-found";
 
 export const Routes = () => {
 	const routes = useRoutes([
+		{
+			path: "*",
+			element: <PageNotFound />,
+		},
 		{
 			path: "/",
 			element: <Home />,
