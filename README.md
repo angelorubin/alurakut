@@ -1,12 +1,12 @@
 # Alurakut
 
-## Versão Online - [clique aqui](https://alurakut-angelorubin.vercel.app)
+## Versão Online - <a href="https://alurakut-angelorubin.vercel.app" target="_blank">clique aqui</a>.
 
 ## Descrição do projeto
 
 O Alurakut é um projeto/desafio de imersão React oferecido gratuitamente da plataforma Alura.
 O desafio consiste em desenvolver uma aplicação moderna baseada no antigo site de relacionamentos denominado Orkut.
-O layout base para este projeto encontra-se [aqui](https://www.figma.com/file/xHF0n0qxiE2rqjqAILiBUB/Alurakut).
+O layout base para este projeto encontra-se <a href="https://www.figma.com/file/xHF0n0qxiE2rqjqAILiBUB/Alurakut" target="_blank">aqui</a>.
 
 ## Bibliotecas utilizadas no projeto
 
