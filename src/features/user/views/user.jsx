@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Box, Paper } from "@material-ui/core";
+import React, { useEffect } from "react";
+import { Box } from "@material-ui/core";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchUserById, getMessages } from "features/user/store/slice";
 
