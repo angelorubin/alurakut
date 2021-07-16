@@ -14,11 +14,11 @@ export const Routes = () => {
 		},
 		{
 			path: "/",
-			element: <Home />,
+			element: <SignIn />,
 		},
 		{
-			path: "/signin",
-			element: <SignIn />,
+			path: "/home",
+			element: <Home />,
 		},
 		{
 			path: "/signup",
