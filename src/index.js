@@ -21,23 +21,23 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import { BrowserRouter as Router } from "react-router-dom";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <Helmet>
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap"
-            rel="stylesheet"
-          />
-        </Helmet>
-        <Router>
-          <App />
-        </Router>
-      </ThemeProvider>
-    </Provider>
-  </React.StrictMode>,
-  document.querySelector("#root")
+	<React.StrictMode>
+		<Provider store={store}>
+			<ThemeProvider theme={theme}>
+				<CssBaseline />
+				<Helmet>
+					<link rel="preconnect" href="https://fonts.googleapis.com" />
+					<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+					<link
+						href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Rubik&display=swap"
+						rel="stylesheet"
+					/>
+				</Helmet>
+				<Router>
+					<App />
+				</Router>
+			</ThemeProvider>
+		</Provider>
+	</React.StrictMode>,
+	document.querySelector("#root")
 );
