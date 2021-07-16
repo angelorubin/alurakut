@@ -3,7 +3,7 @@
 ## Descrição do projeto
 
 O Alurakut é um projeto/desafio de imersão React oferecido gratuitamente da plataforma Alura.
-O desafio consisti em desenvolver uma aplicação moderna baseada no antigo site de relacionamentos denominado Orkut.
+O desafio consiste em desenvolver uma aplicação moderna baseada no antigo site de relacionamentos denominado Orkut.
 O layout base para este projeto encontra-se [aqui](https://www.figma.com/file/xHF0n0qxiE2rqjqAILiBUB/Alurakut).
 
 ## Bibliotecas utilizadas no projeto
