@@ -1,5 +1,7 @@
 # Alurakut
 
+## Versão Online - [clique aqui](https://alurakut-angelorubin.vercel.app)
+
 ## Descrição do projeto
 
 O Alurakut é um projeto/desafio de imersão React oferecido gratuitamente da plataforma Alura.
