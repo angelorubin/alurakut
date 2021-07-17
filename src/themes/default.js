@@ -10,7 +10,7 @@ const coef = fontSize / 14;
 let theme = createTheme({
 	spacing: (factor) => `${0.25 * factor}rem`,
 	shape: {
-		borderRadius: 3,
+		borderRadius: (value) => value,
 	},
 	breakpoints: {
 		values: {

@@ -1,9 +1,17 @@
 import React from "react";
-import { Box, Typography, Input, Link } from "@material-ui/core";
-import * as S from "./styles";
+import {
+	Box,
+	Typography,
+	Input,
+	Link,
+	Button,
+	Divider,
+	OutlinedInput,
+} from "@material-ui/core";
 import { useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
-import { ReactComponent as LoginLogo } from "assets/icons/login-logo.svg";
+import LoginLogo from "assets/icons/login-logo.svg";
+import * as S from "./styles";
 
 const Login = () => {
 	let navigate = useNavigate();
@@ -29,6 +37,7 @@ const Login = () => {
 				alignItems: "center",
 				minHeight: "100vh",
 				backgroundColor: (theme) => theme.palette.primary.light,
+				overflowY: "hidden",
 			}}
 		>
 			<Box
@@ -38,6 +47,9 @@ const Login = () => {
 					gap: (theme) => theme.spacing(3),
 					width: "739px",
 					minHeight: "368px",
+					borderRadius: (theme) => theme.shape.borderRadius(2),
+					mr: (theme) => theme.spacing(4),
+					ml: (theme) => theme.spacing(4),
 				}}
 			>
 				<Box
@@ -45,6 +57,11 @@ const Login = () => {
 						display: "flex",
 						flex: 1,
 						gap: (theme) => theme.spacing(3),
+						"@media (max-width: 600px)": {
+							display: "flex",
+							flexDirection: "column",
+							gap: "1rem",
+						},
 					}}
 				>
 					<Box
@@ -58,7 +75,15 @@ const Login = () => {
 							backgroundColor: (theme) => theme.palette.common.white,
 						}}
 					>
-						<LoginLogo />
+						<S.Logo
+							src={LoginLogo}
+							sx={{
+								"@media (max-width: 400px)": {
+									width: "190px",
+									height: "45px",
+								},
+							}}
+						/>
 						<Box
 							sx={{
 								display: "flex",
@@ -71,11 +96,13 @@ const Login = () => {
 							<Typography
 								sx={{
 									fontFamily: (theme) => theme.typography.fontFamily.rubik,
-									fontStyle: " normal",
 									fontWeight: "bold",
 									fontSize: "12px",
-									lineHeight: "14px",
 									color: "#D81D99",
+									mr: 4,
+									ml: 4,
+									mt: 4,
+									textAlign: "center",
 								}}
 							>
 								Conecte-se aos seus amigos e familiares usando recados e
@@ -89,6 +116,10 @@ const Login = () => {
 									fontSize: "12px",
 									lineHeight: "14px",
 									color: "#D81D99",
+									mr: 4,
+									ml: 4,
+									mt: 4,
+									textAlign: "center",
 								}}
 							>
 								Conheça novas pessoas através de amigos de seus amigos e
@@ -102,6 +133,10 @@ const Login = () => {
 									fontSize: "12px",
 									lineHeight: "14px",
 									color: "#D81D99",
+									mr: 4,
+									ml: 4,
+									mt: 4,
+									textAlign: "center",
 								}}
 							>
 								Compartilhe seus vídeos, fotos e paixões em um só lugar
@@ -114,6 +149,7 @@ const Login = () => {
 							flexDirection: "column",
 							flex: 1,
 							gap: (theme) => theme.spacing(2),
+							backgroundColor: "#F1F9FE",
 						}}
 					>
 						<Box
@@ -123,7 +159,6 @@ const Login = () => {
 								alignItems: "center",
 								flexDirection: "column",
 								flex: 3,
-								border: "1px dashed red",
 							}}
 						>
 							<Typography
@@ -150,21 +185,142 @@ const Login = () => {
 								</Link>
 								com a sua conta
 							</Typography>
-							<Input placeholder="" />
-							<Input placeholder="" />
+							<OutlinedInput
+								placeholder="Usuário"
+								sx={{
+									background: " #FFFFFF",
+									height: "40px",
+									border: "1px solid #C5C6CA",
+									borderRadius: "8px",
+								}}
+							/>
+							<Button>Login</Button>
 						</Box>
 						<Box
 							sx={{
+								display: "flex",
+								alignItems: "center",
+								flexDirection: "column",
+								justifyContent: "center",
 								flex: 1,
 								border: "1px dashed red",
+								minHeight: "74px",
 							}}
 						>
-							06
+							<Typography
+								sx={{
+									fontFamily: (theme) => theme.typography.rubik,
+									fontsize: "12px",
+									lineHeight: "14px",
+									textAlign: "center",
+									color: "#333333",
+								}}
+							>
+								Ainda não é membro?
+							</Typography>
+							<Typography sx={{}}>ENTRAR JÁ</Typography>
 						</Box>
 					</Box>
 				</Box>
-				<Box sx={{ display: "flex", border: "1px dashed blue", width: "100%" }}>
-					02
+				<Box
+					sx={{
+						display: "flex",
+						alignItems: "center",
+						justifyContent: "center",
+						borderRadius: (theme) => theme.shape.borderRadius(8),
+						width: "100%",
+						backgroundColor: "#BBCDE8",
+						minHeight: "27px",
+						p: 6,
+					}}
+				>
+					<Typography
+						sx={{
+							display: "flex",
+							fontFamily: (theme) => theme.palette.common.white,
+							fontSize: "12px",
+							lineHeight: "14px",
+							textAlign: "center",
+							"@media (max-width:400px)": {
+								display: "flex",
+								flexDirection: "column",
+								gap: "1rem",
+							},
+						}}
+					>
+						<Typography
+							component="span"
+							sx={{
+								fontFamily: (theme) => theme.typography.rubik,
+								fontSize: "12px",
+								lineHeight: "14px",
+								textAlign: "center",
+								color: "#333333",
+							}}
+						>
+							© 2020 Orkut.br
+						</Typography>
+						<Divider
+							sx={{
+								"@media (max-width: 400px)": {
+									display: "none",
+								},
+							}}
+						>
+							-
+						</Divider>
+						<Link href="#" underline="none">
+							Sobre o Orkut.br
+						</Link>
+						<Divider
+							sx={{
+								"@media (max-width: 400px)": {
+									display: "none",
+								},
+							}}
+						>
+							-
+						</Divider>
+						<Link href="#" underline="none">
+							Centro de segurança
+						</Link>
+						<Divider
+							sx={{
+								"@media (max-width: 400px)": {
+									display: "none",
+								},
+							}}
+						>
+							-
+						</Divider>
+						<Link href="#" underline="none">
+							Privacidade
+						</Link>
+						<Divider
+							sx={{
+								"@media (max-width: 400px)": {
+									display: "none",
+								},
+							}}
+						>
+							-
+						</Divider>
+						<Link href="#" underline="none">
+							Termos
+						</Link>
+						<Divider
+							sx={{
+								"@media (max-width: 400px)": {
+									display: "none",
+								},
+							}}
+						>
+							-
+						</Divider>
+						<Link href="#" underline="none">
+							Contato
+						</Link>
+					</Typography>
 				</Box>
 			</Box>
 		</Box>
