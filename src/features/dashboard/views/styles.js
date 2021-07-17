@@ -1,13 +1,8 @@
-import styled, { css } from "styled-components";
+import { styled } from "@material-ui/system";
 import { Link as ReactRouterDomLink } from "react-router-dom";
-import { Box } from "@material-ui/core";
-import { createTheme } from "@material-ui/core";
-const theme = createTheme();
-const { error, grey, common, text } = theme.palette;
-const { typography } = theme;
 
 export const Link = styled(ReactRouterDomLink)`
-  text-decoration: none;
+	text-decoration: none;
 `;
 
 /**
