@@ -2,12 +2,12 @@ import React from "react";
 import {
 	Box,
 	Typography,
-	Link,
 	Button,
 	Divider,
+	Link as MuiLink,
 	OutlinedInput,
 } from "@material-ui/core";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link as RouterLink } from "react-router-dom";
 import { useFormik } from "formik";
 import LoginLogo from "assets/icons/login-logo.svg";
 import * as S from "./styles";
@@ -192,7 +192,7 @@ const Signin = () => {
 								}}
 							>
 								Acesse o
-								<Link
+								<MuiLink
 									href="http://www.orkut.com/index.html"
 									underline="none"
 									target="_blank"
@@ -206,7 +206,7 @@ const Signin = () => {
 									}}
 								>
 									www.orkut.br
-								</Link>
+								</MuiLink>
 								com a sua conta
 							</Typography>
 							<OutlinedInput
@@ -219,17 +219,20 @@ const Signin = () => {
 								}}
 								placeholder="Usuário"
 							/>
-							<Button
-								sx={{
-									backgroundColor: "#2E7BB4",
-									width: "209px",
-									height: "40px",
-									color: "common.white",
-									borderRadius: 4,
-								}}
-							>
-								Login
-							</Button>
+							<RouterLink to="/home">
+								<Button
+									sx={{
+										backgroundColor: "#2E7BB4",
+										width: "209px",
+										height: "40px",
+										color: "common.white",
+										borderRadius: 4,
+										textDecoration: "none",
+									}}
+								>
+									entrar
+								</Button>
+							</RouterLink>
 						</Box>
 						<Box
 							sx={{
@@ -316,25 +319,25 @@ const Signin = () => {
 						>
 							-
 						</Divider>
-						<Link href="#" underline="none">
+						<MuiLink href="#" underline="none">
 							Sobre o Orkut.br
-						</Link>
+						</MuiLink>
 						<Divider>-</Divider>
-						<Link href="#" underline="none">
+						<MuiLink href="#" underline="none">
 							Centro de segurança
-						</Link>
+						</MuiLink>
 						<Divider>-</Divider>
-						<Link href="#" underline="none">
+						<MuiLink href="#" underline="none">
 							Privacidade
-						</Link>
+						</MuiLink>
 						<Divider>-</Divider>
-						<Link href="#" underline="none">
+						<MuiLink href="#" underline="none">
 							Termos
-						</Link>
+						</MuiLink>
 						<Divider>-</Divider>
-						<Link href="#" underline="none">
+						<MuiLink href="#" underline="none">
 							Contato
-						</Link>
+						</MuiLink>
 					</Typography>
 				</Box>
 			</Box>
